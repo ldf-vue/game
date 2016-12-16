@@ -27,6 +27,15 @@ const routers = [{
         });
     }
 }, {
+    path: '/person',
+    name: 'person',
+    //component: Gift
+    component(resolve) {
+        require.ensure(['./views/person.vue'], () => {
+            resolve(require('./views/person.vue'));
+        });
+    }
+},{
     path: '*',
     component: Home
 }];

@@ -2,10 +2,14 @@
   <div id="footer">
     <ul class="box-flex">
       <li v-for="item in items" class="box-flex-item">
-        <router-link :to="{ name: item.href}" :class="{'on':item.href==curHref}">
+        <router-link v-if="item.href.indexOf('http:')==-1" :to="{ name: item.href}" :class="{'on':item.href==curHref}">
           <i class="iconfont" :class="[item.class]"></i>
           <p>{{item.name}}</p>
         </router-link>
+        <a v-else :href="item.href">
+          <i class="iconfont" :class="[item.class]"></i>
+          <p>{{item.name}}</p>
+        </a>
       </li>
     </ul>
   </div>
@@ -18,7 +22,9 @@ export default {
     return {
       items: [
         {name:'游戏',class:'icon-zhuye',href:'home'},
-        {name:'礼包',class:'icon-kefu',href:'gift'}
+        {name:'礼包',class:'icon-kefu',href:'gift'},
+        {name:'社区',class:'icon-jilu',href:'http://buluo.qq.com/mobile/barindex.html?_bid=128&_wv=1027&bid=240598'},
+        {name:'个人',class:'icon-zhangdan1',href:'person'}
       ],
       curHref:'home'
     }
