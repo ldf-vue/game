@@ -1,11 +1,15 @@
 <template>
     <div id="index">
-      <swipe></swipe>      
+      <myHeader></myHeader>
+      <swipe></swipe>
+      <lastPlay></lastPlay>
       <tapNav></tapNav>      
     </div>
 </template>
 
 <script>
+import myHeader from '../components/myHeader'
+import lastPlay from '../components/lastPlay'
 import swipe from '../components/swipe-home'
 import tapNav from '../components/tapNav-home'
 
@@ -15,7 +19,7 @@ export default {
     return {      
     }
   },
-  components: { swipe,tapNav }
+  components: { myHeader,lastPlay,swipe,tapNav }
 }
 </script>
 
