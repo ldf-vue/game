@@ -3,14 +3,19 @@
   v-infinite-scroll="loadMore"
   infinite-scroll-disabled="scrollDisabled"
   infinite-scroll-distance="30">
-  <li v-for="item in list">
-    <div>
-      <img :src="item.icon"/>
+  <li v-for="item in list" class="news">
+    <div class="news-list">
+      <div class="news-info">
+        <div class="test-ellipsis">
+          <span class="activity">活动</span>
+          <!-- <p class="news-title">{{ item.title}}</p> -->
+          <span class="news-title">《妖怪宝可萌》12月20日维护公告</span>
+        </div>
+      </div>
+      <div class="news-time">
+        <p>12-19</p>
+      </div>
     </div>   
-    <div class="game-text">
-      <p>{{item.title}}</p>
-      <p class="small">{{item.brief_intro}}</p>      
-    </div>
   </li>
 </ul>
 <!-- <div>dddd</div> -->
@@ -77,9 +82,35 @@ export default {
   };
 </script>
 
-<style scoped>
-
-</style>
 <style>
-
+  .news-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  li.news {
+    height: 19px;
+    padding: 9px;
+    line-height: 19px;
+    background:#fff;
+    margin-top: 5px;
+    position: relative;
+  }
+  .news-list .activity {
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 2px;
+    position: relative;
+    top: -2px;
+    color: #2697FC;
+    border: 1px solid #2697FC;
+  }
+  .news-info {
+    width: 80%;
+    float: left;
+  }
+  .news-title {
+    display: inline;
+    font-size: 14px;
+  }
 </style>

@@ -3,13 +3,27 @@
   v-infinite-scroll="loadMore"
   infinite-scroll-disabled="scrollDisabled"
   infinite-scroll-distance="30">
-  <li v-for="item in list">
+  <li v-for="item in list" class="new-service">
     <div>
-      <img :src="item.icon"/>
-    </div>   
-    <div class="game-text">
-      <p>{{item.title}}</p>
-      <p class="small">{{item.brief_intro}}</p>      
+      <table>
+        <tr>
+          <td width="5%">
+              <img class="game-icon" style="width: 25px; height: 25px;" src="http://h5.hortorgames.com/gc/img/games/jzsc_icon.png" alt="...">
+          </td>
+          <td width="27%">
+              <span>决战沙城</span>
+          </td>
+          <td width="34%">
+              <span>沙城916区</span>
+          </td>
+          <td width="15%" style="text-align: center;">
+              开服<br>2小时
+          </td>
+          <td width="18%">
+              <a class="btn">进入</a>
+          </td>
+            </tr>
+      </table>
     </div>
   </li>
 </ul>
@@ -78,8 +92,26 @@ export default {
 </script>
 
 <style scoped>
+  li.new-service {
+    padding: 0;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .new-service td {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 
-</style>
-<style>
-
+  li.new-service td a {
+    float: left;
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #5d5d5d;
+    padding: 3px 9px;
+    border-color: #e4e4e4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+  }
 </style>

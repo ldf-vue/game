@@ -4,12 +4,23 @@
   infinite-scroll-disabled="scrollDisabled"
   infinite-scroll-distance="30">
   <li v-for="item in list">
-    <div>
-      <img :src="item.icon"/>
-    </div>   
-    <div class="game-text">
-      <p>{{item.title}}</p>
-      <p class="small">{{item.brief_intro}}</p>      
+    <a href="http://192.168.2.120:8080/#/details" class="gameDetails">
+      <div>
+        <img :src="item.icon"/>
+      </div>   
+      <div class="game-text">
+        <div>
+          <p>{{item.title}}</p>
+          <span class="only" :class={show:item.showOnly}>独家</span>
+          <span class="hot" :class={show:item.showHot}>热门</span>
+          <span class="gift" :class={show:item.showGift}>礼包</span>
+        </div>
+        <p class="small">{{item.brief_intro}}</p>      
+      </div>
+    </a>
+
+    <div class="right-enter">
+      <a v-bind:href="item.href" class="btn">进入</a>
     </div>
   </li>
 </ul>
@@ -65,9 +76,56 @@ export default {
   };
 </script>
 
-<style scoped>
-
-</style>
 <style>
+  .game-text p {
+    display: inline-block;
+  }
+
+  .game-text span {
+    margin-left: 4px;
+    padding: 0 2px;
+    font-size: 10px;
+    border-radius: 2px;
+    position: relative;
+    top: -2px;
+    display: none;
+  }
+
+  .game-text span.show {
+    display: inline-block;
+  }
+
+  .game-text span.only {
+    color: red;
+    border: 1px solid red;
+  }
+  .game-text span.hot {
+    color: orange;
+    border: 1px solid orange;
+  }
+  .game-text span.gift {
+    color: #2697FC;
+    border: 1px solid #2697FC;
+  }
+
+  .right-enter {
+    /*float: right;*/
+    vertical-align: middle;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+  }
+
+  .right-enter a.btn {
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #5d5d5d;
+    padding: 3px 9px;
+    border-color: #e4e4e4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+  }
 
 </style>

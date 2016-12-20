@@ -29,12 +29,12 @@ export default {
        items: [
         {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
         {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
-        {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
-        {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
-        {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
-        {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
-        {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
-        {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
+        // {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
+        // {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
+        // {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
+        // {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
+        // {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
+        // {img:'http://gc-img.oss-cn-qingdao.aliyuncs.com/icon-1482070788.gif', info:'妖怪宝可萌'},
       ],
     }
   }

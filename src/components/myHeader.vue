@@ -2,7 +2,9 @@
     <div id="headWrap">
     	<div id="header">
 			<div class="user-photo">
-				<img class="photo" v-bind:src="headImg">
+				<a href="http://192.168.2.120:8080/#/person">
+					<img class="photo" v-bind:src="headImg">
+				</a>
 			</div>
 			<p class="user-name">{{ userName}}</p>
 			<p class="user-level">
