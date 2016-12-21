@@ -1,5 +1,6 @@
 <template>
 <div id="gift">
+  <myHeader></myHeader>
   <p class="gift_title">游戏礼包列表</p>
   <div class="gift_list">
     <div class="list_item">
@@ -37,26 +38,16 @@
 </template>
 
 <script>
+import myHeader from '../components/myHeader'
 
-// export default { 
-//   name: 'app',
-//   data () {
-//     return {
-//       msg: '顶顶顶顶Welcome to Your Vue.js App'
-//     }
-//   },
-//   methods:{
-//   	giftTap:function(e){
-//   		alert('giftTap');
-//   		console.dir(e)
-//   		return 'giftTap'
-//   		//console.log(str)
-//   	},
-//   	changeMsg:function(){
-//   		this.msg = 'dddd';
-//   	},
-//   }
-// }
+export default {
+  name: 'app',
+  data () {
+    return {      
+    }
+  },
+  components: { myHeader }
+}
 </script>
 
 <style>
@@ -67,7 +58,7 @@
 }
 /*礼包界面主标题*/
 .gift_title {
-  margin-left: 16px;
+  margin: 20px 0 0 16px;
   padding: 4px 0;
 }
 /*==============列表=============*/

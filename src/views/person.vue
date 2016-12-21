@@ -18,18 +18,18 @@
         <span class="">推送设置</span>
       </li>
     </ul>
-    <div id="list">
-      <div class="list_item">
-        <div class="item_icon">
+    <div id="per_list">
+      <div class="per_list_item">
+        <div class="per_item_icon">
           <a href="#">
             <img class="icon" src="http://h5.hortorgames.com/gc/img/games/chuanqishijie_icon.png">
           </a>
         </div>
-        <div class="item_text">
+        <div class="per_item_text">
           <p class="title">传奇世界</p>
           <p class="load_time">上次登陆: 2016-12-19 17:22:35</p>
         </div>
-        <div class="item_btn">
+        <div class="per_item_btn">
           <a href="#">进 入</a>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default {
   position: relative;
 }
 /*抽取公共样式*/
-.id,#user_name p,#user_exp p,.level_exp { 
+.id,#user_name p,#user_exp p,.level_exp {
   padding: 3px;
   color: #ddd;
   background-color: rgba(0, 0, 0, 0.4);
@@ -147,23 +147,23 @@ export default {
   border-bottom: solid 2px #2697FC;
 }
 /*============最下方内容===============*/
-#list {
+#per_list {
   border-top: solid 1px #ddd;
   padding: 0 12px;
   background-color: #fff
 }
-.list_item {
+.per_list_item {
   width: 100%;
   height: 60px;
   margin-top: 12px;
   padding-bottom: 5px
 }
-.item_icon,.item_text,.item_btn {
+.per_item_icon,.per_item_text,.per_item_btn {
   display: inline-block;
   vertical-align: middle;
 }
 /*图标*/
-.item_icon {
+.per_item_icon {
   padding-right: 10px;
 }
 .icon {
@@ -171,9 +171,6 @@ export default {
   height: 60px;
 }
 /*中间文字*/
-.item_text {
-
-}
 .title {
   font-size: 17px;
   padding-top: 5px;
@@ -186,11 +183,11 @@ export default {
   margin-bottom: 5px
  }
 /*最后按钮*/
-.item_btn {
+.per_item_btn {
   float: right;
   padding-left: 10px;
 }
-.item_btn a {
+.per_item_btn a {
   line-height: 60px;
   padding: 5px 13px;
   background-color: #f2f2f2;
