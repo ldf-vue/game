@@ -139,7 +139,6 @@
 }
 /*按钮*/
 .item_btn {
-  display: inline-block;
   color: #777;
   position: absolute;
   right: 10px;

@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style>
+
 #person {
   font-family: '微软雅黑'
 }
