@@ -4,7 +4,7 @@
   infinite-scroll-disabled="scrollDisabled"
   infinite-scroll-distance="30">
   <li v-for="item in list">
-    <a href="http://localhost:8080/#/details" class="gameDetails">
+    <a href="/#/details" class="gameDetails">
       <div>
         <img :src="item.icon"/>
       </div>   
