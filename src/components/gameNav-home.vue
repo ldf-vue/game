@@ -5,7 +5,7 @@
     <mt-tab-item id="2">礼包</mt-tab-item>
   </mt-navbar>
   <!-- tab-container -->
-  <mt-tab-container v-model="selected" :swipeable='true'>
+  <mt-tab-container v-model="selected">
     <mt-tab-container-item id="1">
       <gameNews :selected="selected=='1'"></gameNews>
     </mt-tab-container-item>
@@ -36,10 +36,10 @@ export default {
     }
   },
   mounted(){
-    var index = this.$store.getters.getIndex;
-    if(index){
-      this.selected = index;
-    }
+    // var index = this.$store.getters.getIndex;
+    // if(index){
+    //   this.selected = index;
+    // }
   },
   watch: {
     selected:function(val, oldVal){
@@ -56,26 +56,23 @@ export default {
 </script>
 
 <style scoped>
+  .mint-navbar {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+  }
   .mint-navbar .mint-tab-item.is-selected{
     margin-bottom: 0;
   }
   .mint-tab-item {
-    padding: 12px 0;
-    display: block;
+    padding: 9px 35px;
+    padding-top: 11px;
+    display: inline-block;
     font-size: 1.1em;
     color: #888;
     margin: 0;
     text-align: center;
-  }
-  #gameNav .mint-tab-item .mint-tab-item-label {
-    font-size: 14px;
-    color: #666;
-    width: 24%;
-    background: red
-  }
-  #gameNav .mint-tab-item.is-selected .mint-tab-item-label{
-    color: #26a2ff;
-    border-bottom: 3px solid #26a2ff;
   }
 </style>
 <style>
