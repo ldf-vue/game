@@ -1,7 +1,5 @@
 <template>
-  <div id="gift">
-   ..................
-  </div>
+
 </template>
 
 <script>
@@ -22,8 +20,5 @@ export default {
 </script>
 
 <style>
-.mydiv{
-	background: green;
-	height: 2000px;
-}
+
 </style>
