@@ -1,5 +1,8 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/master
   <div id="person">
     <div id="head">
       <span class="id">ID:12345678</span>
@@ -36,8 +39,11 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
 =======
 
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> refs/remotes/origin/master
 </template>
 
@@ -60,6 +66,9 @@ export default {
 
 <style>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/master
 #person {
   font-family: '微软雅黑'
 }
@@ -203,7 +212,10 @@ export default {
   border-radius: 3px;
   font-size: 12px
 }
+<<<<<<< HEAD
 =======
 
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> refs/remotes/origin/master
 </style>
