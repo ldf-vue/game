@@ -1,5 +1,5 @@
-<template>   
-    <mt-swipe :auto="4000">
+<template>
+    <mt-swipe :auto="4000" :show-indicators="false">
       <mt-swipe-item class="slide1">1</mt-swipe-item>
       <mt-swipe-item class="slide2">2</mt-swipe-item>
       <mt-swipe-item class="slide3">3</mt-swipe-item>
@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .mint-swipe {
-  height: 140px;
+  height: 120px;
   color: #fff;
   font-size: 30px;
   text-align: center;
@@ -33,7 +33,7 @@ export default {
 }
 
 .mint-swipe-item {
-  line-height: 140px;
+  line-height: 120px;
 }
 
 .slide1 {

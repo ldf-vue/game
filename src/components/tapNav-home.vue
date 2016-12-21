@@ -86,16 +86,26 @@ export default {
   height: 50px;
   padding: 10px;
   background:#fff;
-  margin-top: 5px
+  margin-top: 5px;
+  position: relative;
+}
+.mint-tab-container-item li a.gameDetails {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .mint-tab-container-item img{
   width: 50px;
   height: 50px;
   float: left;
 }
+.game-text {
+  float: left;
+}
 .game-text p{
   line-height: 25px;
-  padding-left: 62px;
+  /*padding-left: 62px;*/
+  padding-left: 12px;
 }
 .game-text p.small{
   font-size: 12px;
