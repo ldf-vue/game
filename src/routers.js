@@ -36,6 +36,15 @@ const routers = [{
         });
     }
 },{
+    path: '/details',
+    name: 'details',
+    //component: Gift
+    component(resolve) {
+        require.ensure(['./views/gameDetails.vue'], () => {
+            resolve(require('./views/gameDetails.vue'));
+        });
+    }
+},{
     path: '*',
     component: Home
 }];

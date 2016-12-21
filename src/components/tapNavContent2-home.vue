@@ -4,12 +4,24 @@
   infinite-scroll-disabled="scrollDisabled"
   infinite-scroll-distance="30">
   <li v-for="item in list">
-    <div>
-      <img :src="item.icon"/>
-    </div>   
-    <div class="game-text">
-      <p>{{item.title}}</p>
-      <p class="small">{{item.brief_intro}}</p>      
+    <a href="http://192.168.2.120:8080/#/details" class="gameDetails">
+      <div>
+        <img :src="item.icon"/>
+      </div>   
+
+      <div class="game-text">
+        <div>
+          <p>{{item.title}}</p>
+          <span class="only" :class={show:item.showOnly}>独家</span>
+          <span class="hot" :class={show:item.showHot}>热门</span>
+          <span class="gift" :class={show:item.showGift}>礼包</span>
+        </div>
+        <p class="small">{{item.brief_intro}}</p>      
+      </div>
+    </a>
+
+    <div class="right-enter">
+      <a v-bind:href="item.href" class="btn">进入</a>
     </div>
   </li>
 </ul>
