@@ -10,47 +10,21 @@
       <div id="user_exp"><p>经验:0/50</p></div>
       <a class="level_exp" href="#">等级说明</a>
     </div>
-    <ul id="person_nav">
-      <li class="recent">
-       <span class="on">最近在玩</span>
-      </li>
-      <li class="set">
-        <span class="">推送设置</span>
-      </li>
-    </ul>
-    <div id="per_list">
-      <div class="per_list_item">
-        <div class="per_item_icon">
-          <a href="#">
-            <img class="icon" src="http://h5.hortorgames.com/gc/img/games/chuanqishijie_icon.png">
-          </a>
-        </div>
-        <div class="per_item_text">
-          <p class="title">传奇世界</p>
-          <p class="load_time">上次登陆: 2016-12-19 17:22:35</p>
-        </div>
-        <div class="per_item_btn">
-          <a href="#">进 入</a>
-        </div>
-      </div>
-    </div>
+    <tapNav></tapNav>
   </div>
 </template>
 
 <script>
 
+import tapNav from '../components/tapNav-person'
 
-
-export default { 
-  name: 'app',
+export default {
+  name: 'person',
   data () {
-    return {
-      msg: '顶顶顶顶Welcome to Your Vue.js App'
+    return {      
     }
   },
-  methods:{
-  	
-  }
+  components: { tapNav }
 }
 </script>
 
@@ -119,81 +93,5 @@ export default {
   margin: 5px;
   text-decoration: underline;
 }
-/*=================中部选项卡==================*/
-#person_nav {
-  width: 100%;
-  height: 45px;
-  background-color: #fff;
-  overflow: hidden;
-  /*line-height: 45px*/
-}
-#person_nav li {
-  display: inline-block;
-  color: #888;
-  width: 49%;
-  text-align: center;
-  font-size: 1.1em;
-  height: 45px
-}
-#person_nav li span {
-  margin: 0 8px;
-  padding: 10px 0;
-  display: block;
-  text-align: center;
-}
-/*选择样式*/
-.on {
-  color: #2697FC;
-  border-bottom: solid 2px #2697FC;
-}
-/*============最下方内容===============*/
-#per_list {
-  border-top: solid 1px #ddd;
-  padding: 0 12px;
-  background-color: #fff
-}
-.per_list_item {
-  width: 100%;
-  height: 60px;
-  margin-top: 12px;
-  padding-bottom: 5px
-}
-.per_item_icon,.per_item_text,.per_item_btn {
-  display: inline-block;
-  vertical-align: middle;
-}
-/*图标*/
-.per_item_icon {
-  padding-right: 10px;
-}
-.icon {
-  width: 60px;
-  height: 60px;
-}
-/*中间文字*/
-.title {
-  font-size: 17px;
-  padding-top: 5px;
-  color: #000;
-  margin: 0 0 3px 0;
-}
-.load_time {
-  font-size:  11px;
-  color: #777;
-  margin-bottom: 5px
- }
-/*最后按钮*/
-.per_item_btn {
-  float: right;
-  padding-left: 10px;
-}
-.per_item_btn a {
-  line-height: 60px;
-  padding: 5px 13px;
-  background-color: #f2f2f2;
-  color: #5d5d5d;
-  border: solid 1px #e4e4e4;
-  border-radius: 3px;
-  font-size: 12px
-}
+
 </style>
