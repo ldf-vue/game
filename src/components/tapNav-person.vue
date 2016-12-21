@@ -54,42 +54,5 @@ export default {
 }
 </style>
 <style>
-.mint-tab-item .mint-tab-item-label{
-  font-size: 14px;
-  color: #666;
-}
-.mint-tab-item.is-selected .mint-tab-item-label{
-  color: #26a2ff;
-}
 
-/*tapNavContent*/
-.mint-tab-container-item li{
-  height: 50px;
-  padding: 10px;
-  background:#fff;
-  margin-top: 5px;
-  position: relative;
-}
-.mint-tab-container-item li a.gameDetails {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-.mint-tab-container-item img{
-  width: 50px;
-  height: 50px;
-  float: left;
-}
-.game-text {
-  float: left;
-}
-.game-text p{
-  line-height: 25px;
-  /*padding-left: 62px;*/
-  padding-left: 12px;
-}
-.game-text p.small{
-  font-size: 12px;
-  color: #666;
-}
 </style>
