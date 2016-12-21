@@ -36,10 +36,10 @@ export default {
     }
   },
   mounted(){
-    var index = this.$store.getters.getIndex;
-    if(index){
-      this.selected = index;
-    }
+    // var index = this.$store.getters.getIndex;
+    // if(index){
+    //   this.selected = index;
+    // }
   },
   components: { 
     tapNavContent1,
