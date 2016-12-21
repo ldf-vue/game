@@ -7,7 +7,7 @@
     <mt-tab-item id="4">新开服</mt-tab-item>
   </mt-navbar>
   <!-- tab-container -->
-  <mt-tab-container v-model="selected" :swipeable='true'>
+  <mt-tab-container v-model="selected">
     <mt-tab-container-item id="1">
       <tapNavContent1 :selected="selected=='1'"></tapNavContent1>
     </mt-tab-container-item>

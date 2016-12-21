@@ -35,7 +35,12 @@ export default {
   },
   methods: {
     routeChange () {
-      this.curHref = this.$route.name; 
+      if(this.$route.name != 'details') {
+        this.curHref = this.$route.name;
+        document.getElementById('footer').style.display = 'block';
+      } else {
+        document.getElementById('footer').style.display = 'none';
+      }
     }
   }
 }
