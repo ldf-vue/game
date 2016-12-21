@@ -104,6 +104,7 @@ export default {
     top: -2px;
     color: #2697FC;
     border: 1px solid #2697FC;
+    height: 37px;
   }
   .news-info {
     width: 80%;

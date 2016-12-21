@@ -2,7 +2,7 @@
     <div id="headWrap">
     	<div id="header">
 			<div class="user-photo">
-				<a href="http://192.168.2.120:8080/#/person">
+				<a href="http://localhost:8080/#/person">
 					<img class="photo" v-bind:src="headImg">
 				</a>
 			</div>
