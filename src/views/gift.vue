@@ -1,4 +1,4 @@
-<template>
+﻿<template>
 <div id="gift">
   <myHeader></myHeader>
   <p class="gift_title">游戏礼包列表</p>
